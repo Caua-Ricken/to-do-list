@@ -3,6 +3,7 @@
     border: 2px solid black;
     min-width: 40rem;
     border-radius: 5px;
+    background-color: rgb(169, 102, 232);
 }
 
 .container-into{
@@ -24,6 +25,8 @@
     padding: 1.3rem 2rem;
     outline: none;
     border-radius: 5px;
+    max-height: 45px;
+    font-size: 1.8rem;
 }
 
 .container-into button{
@@ -35,6 +38,10 @@
     font-size: 2rem;
     background-color: rgb(149, 149, 149);
     border: none;
+}
+
+.container-into button:hover{
+    border: 1px solid black;
 }
 
 .map{
@@ -68,4 +75,25 @@
     color: red;
     position: absolute;
     right: 1rem;
+}
+
+.message{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.result p {
+    font-size: 2rem;
+    background-color: rgb(68, 0, 132);
+    color: white;
+    border-radius: 1.6rem;
+    padding: .6rem;
 }
