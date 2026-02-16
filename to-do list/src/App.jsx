@@ -81,8 +81,7 @@ function App() {
 
         ))}
       </div>
-
-
+      
       <div className="result">
       <p>Total: {listCom.length}</p>
       <p>Realizadas: {task}</p>

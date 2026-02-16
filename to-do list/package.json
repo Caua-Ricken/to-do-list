@@ -1,4 +1,5 @@
 {
+  "homepage":"https://Caua-Ricken.github.io/to-do-list",
   "name": "to-do-list",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch data/db.json"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.5",
