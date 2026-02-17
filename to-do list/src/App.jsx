@@ -10,7 +10,15 @@ function App() {
   const [task, setTask] = useState(0)
 
   const next = () => {
-    if(list.trim() === '') return
+    if(list.trim() === '') {
+      setMessagem("digite alguma tarefa")
+
+      setTimeout(() => {
+      setMessagem('')
+    }, 3000)
+    
+      return
+    }
 
     setListCom([...listCom,{text: list, value: false}]);
     setMessagem('Tarefa adiciona com sucesso✅')
